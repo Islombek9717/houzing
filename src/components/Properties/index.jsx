@@ -2,8 +2,9 @@ import React from 'react'
 import { Container } from './style'
 
 export const Properties = () => {
-  return 
+  return (
   <Container>Properties</Container>
+  )
 }
 
 export default Properties;

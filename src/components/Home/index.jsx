@@ -2,8 +2,9 @@ import React from 'react'
 import { Container } from './style'
 
 export const Home = () => {
-  return 
+  return ( 
   <Container>Home</Container>
+  )
 }
 
 export default Home;
