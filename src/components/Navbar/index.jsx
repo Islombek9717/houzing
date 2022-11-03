@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
+import Button from "../Generic/Button";
 import { Container, Wrapper, Section, Logo, Link, Main } from "./style";
 
 export const Navbar = () => {
@@ -27,7 +28,7 @@ export const Navbar = () => {
             })}
           </Section>
           <Section>
-            <button>SignIn</button>
+            <Button>SignIn</Button>
           </Section>
         </Wrapper>
       </Main>
