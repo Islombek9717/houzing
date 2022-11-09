@@ -4,6 +4,7 @@ import { navbar } from "../../utils/navbar";
 import Button from "../Generic/Button";
 import { Container, Wrapper, Section, Logo, Link, Main } from "./style";
 
+
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
@@ -15,8 +16,8 @@ export const Navbar = () => {
             <h3>Houzing</h3>
           </Section>
           <Section>
-            {navbar.map(({ title, path }, index) => {
-              return (
+            {navbar.map(({ title, path, hidden }, index) => {
+              return (!hidden &&  (
                 <Link
                   className={({ isActive }) => isActive && "active"}
                   key={index}
@@ -24,11 +25,12 @@ export const Navbar = () => {
                 >
                   {title}
                 </Link>
+              )
               );
             })}
           </Section>
           <Section>
-            <Button>SignIn</Button>
+            <Button onClick={()=>navigate('/signin')} type='dark'>Sign In</Button>
           </Section>
         </Wrapper>
       </Main>
