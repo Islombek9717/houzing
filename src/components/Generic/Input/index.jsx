@@ -1,18 +1,32 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Icon, Wrapper } from "./style";
 
-export const Input = ({ type, onChange, value, defaultValue, placeholder, name, width, height }) => {
+export const Input = ({
+  type,
+  icon,
+  onChange,
+  value,
+  defaultValue,
+  placeholder,
+  name,
+  width,
+  height,
+}) => {
   return (
-    <Container
-      placeholder={placeholder}
-      name={name}
-      value={value}
-      defaultValue={defaultValue}
-      onChange={onChange}
-      type={type}
-      width={width}
-      height={height}
-    />
+    <Wrapper>
+      <Icon>{icon}</Icon>
+      <Container
+        icon={icon}
+        placeholder={placeholder}
+        name={name}
+        value={value}
+        defaultValue={defaultValue}
+        onChange={onChange}
+        type={type}
+        width={width}
+        height={height}
+      />
+    </Wrapper>
   );
 };
 
