@@ -1,8 +1,9 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
+import Filter from "../Filter";
 import Button from "../Generic/Button";
-import { Container, Wrapper, Section, Logo, Link, Main } from "./style";
+import { Container, Wrapper, Section,LogoName, Logo, Link, Main } from "./style";
 
 
 export const Navbar = () => {
@@ -13,7 +14,7 @@ export const Navbar = () => {
         <Wrapper>
           <Section onClick={() => navigate("/home")} logo>
             <Logo />
-            <h3>Houzing</h3>
+            <LogoName>Houzing</LogoName>
           </Section>
           <Section>
             {navbar.map(({ title, path, hidden }, index) => {
@@ -34,6 +35,7 @@ export const Navbar = () => {
           </Section>
         </Wrapper>
       </Main>
+      <Filter />
       <Outlet />
     </Container>
   );
