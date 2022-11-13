@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #ffff;
-  padding: var(--padding);
+  /* padding: var(--padding); */
   height: 64px;
   font-size: 16px;
   width: 100%;
@@ -40,10 +40,14 @@ const Logo = styled(logoImg)`
   }
 `;
 
+const LogoName = styled.h3`
+color: #ffff;
+`
+
 const Link = styled(NavLink)`
   text-decoration: none;
   padding: 0 32px;
   color: #ffff;
 `;
 
-export { Container, Wrapper, Section, Logo, Link, Main };
+export { Container, Wrapper,LogoName, Section, Logo, Link, Main };

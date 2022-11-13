@@ -53,7 +53,9 @@ const Wrapper = styled.div`
 `;
 const Icon = styled.div`
   position: absolute;
-  left: 10px;
+  transform: translate(-50%, -50%);
+  left: 20px;
+  top: 50%;
 `;
 
 export { Container, Wrapper, Icon };
