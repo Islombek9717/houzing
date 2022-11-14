@@ -22,8 +22,8 @@ body {
 }
 
 .title {
-    font-family: 'Montserrat';
-    font-style: normal;
+  font-family: "Montserrat";
+  font-style: normal;
   color: #0b263b;
   font-size: 28px;
   font-weight: 600;
@@ -32,12 +32,22 @@ body {
   letter-spacing: -0.02rem;
 }
 
-
 .subTitle {
-    font-family: 'Montserrat';
-    font-style: normal;
+  font-family: "Montserrat";
+  font-style: normal;
   color: #0b263b;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+}
+
+.info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #696969;
 }
