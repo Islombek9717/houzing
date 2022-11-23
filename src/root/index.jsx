@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import {  Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import { navbar } from '../utils/navbar'
 
  export const Root = () => {
-  return <BrowserRouter>
+  return (
   <Routes>
     <Route element={<Navbar />}>
     {
@@ -15,8 +15,8 @@ import { navbar } from '../utils/navbar'
     </Route>
     <Route path='*' element={<h1>404 NOT FOUND</h1>} />
     <Route path='/' element={<Navigate to={'/home'} />} />
-  </Routes>
-  </BrowserRouter>
+  </Routes>)
+  
 }
 
 export default Root
