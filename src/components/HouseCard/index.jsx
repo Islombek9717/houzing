@@ -12,6 +12,7 @@ export const HosueCard = ({ data = {} }) => {
     city,
     country,
     description,
+    category,
   } = data;
 
   console.log(data);
@@ -23,7 +24,7 @@ export const HosueCard = ({ data = {} }) => {
         <div className="subTitle inline">
           {city} {country} {description}{" "}
         </div>
-        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"}</div>
+        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"} - {category?.name || "category"}</div>
         <Details>
           <Details.Item>
             <Icons.Bed />
