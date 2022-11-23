@@ -5,11 +5,12 @@ import { useLocation } from "react-router-dom";
 
 const { REACT_APP_BASE_URL: url } = process.env;
 
+
 export const Properties = () => {
   const [data, setData] = useState([]);
   const { search } = useLocation();
 
-  console.log(url);
+  
   useEffect(() => {
     fetch(`${url}/houses/list${search}`)
       .then((res) => res.json())
