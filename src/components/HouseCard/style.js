@@ -6,9 +6,12 @@ import { ReactComponent as ruler } from "../../assets/icons/ruler.svg";
 import { ReactComponent as love } from "../../assets/icons/love.svg";
 import { ReactComponent as resize } from "../../assets/icons/resize.svg";
 const Container = styled.div`
-  width: 380px;
-  height: 420px;
-
+  width: 100%;
+  max-width: 380px;
+  min-width: 330px;
+  height: 430px;
+  background: white;
+  border: 1px solid #e6e9ec;
   filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
@@ -17,7 +20,7 @@ const Container = styled.div`
 const Img = styled.img`
   width: 100%;
   max-height: 220px;
-  min-height: 220px;
+  min-height: 200px;
 `;
 const Content = styled.div`
   display: flex;
@@ -62,7 +65,7 @@ Icons.Love = styled(love)`
 Icons.Resize = styled(resize)``;
 
 const Divider = styled.div`
-  background: 1px solid #e6e9ec;
+  background: #e6e9ec;
   height: 1px;
   width: 100%;
 `;
