@@ -20,6 +20,7 @@ const Container = styled.div`
 `;
 
 const Img = styled.img`
+border-radius: 3px;
   width: 100%;
 `;
 
@@ -45,35 +46,6 @@ const Content = styled.div`
 `;
 
 
-// const Content = styled.div`
-//   display: flex;
-//   flex-direction: ${({ footer }) => (footer ? "row" : "column")};
-//   justify-content: ${({ footer }) => footer && "space-between"};
-//   padding-top: 24px;
-//   padding: 16px 20px;
-//   background: #ffff;
-// `;
-
-
-const Icons = styled.div``;
-
-Icons.Bed = styled(bed)``;
-Icons.Bath = styled(bath)``;
-Icons.Garage = styled(garage)``;
-Icons.Ruler = styled(ruler)``;
-Icons.Love = styled(love)`
-  width: 27px;
-  height: 27px;
-  padding: 6px;
-  background: #f6f8f9;
-  border-radius: 50%;
-  margin-left: 20px;
-  cursor: pointer;
-  :active {
-    transform: scale(0.9);
-  }
-`;
-Icons.Resize = styled(resize)``;
 
 const Blur = styled.div`
   position: absolute;
@@ -85,4 +57,4 @@ const Blur = styled.div`
   background: rgba(0, 0, 0, 0.7);
 `;
 
-export { Container, Img, Content,  Icons, Blur };
+export { Container, Img, Content, Blur };
